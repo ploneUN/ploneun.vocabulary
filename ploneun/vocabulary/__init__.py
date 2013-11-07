@@ -3,6 +3,9 @@ from Products.CMFQuickInstallerTool.interfaces import INonInstallable
 from five import grok
 from collective.grok import gs
 from zope.i18nmessageid import MessageFactory
+from zope.schema.interfaces import IVocabularyFactory
+from zope.component import getUtility
+
 
 # Set up the i18n message factory for our package
 MessageFactory = MessageFactory('ploneun.vocabulary')
@@ -23,3 +26,9 @@ gs.profile(name=u'default',
            title=u'ploneun.vocabulary',
            description=_(u''),
            directory='profiles/default')
+
+def resolve_value(context, value, vocabulary):
+    factory = getUtility(IVocabularyFactory, name=vocabulary)
+    vocab = factory(context)
+    return vocab.getTerm(value).title
+
