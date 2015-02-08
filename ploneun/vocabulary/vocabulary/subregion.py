@@ -16,14 +16,6 @@ class UNGeographicalSubRegion(grok.GlobalUtility):
     #FIXME incomplete, and should be from lookup csv file
     _terms = [
         {
-        'value': '014',
-        'title': 'Easter Africa',
-        },
-        {
-        'value': '017',
-        'title': 'Eastern Africa',
-        },
-        {
         'value': '029',
         'title': 'Caribbean',
         },
