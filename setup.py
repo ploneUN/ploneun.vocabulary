@@ -32,7 +32,6 @@ setup(name='ploneun.vocabulary',
           'plone.app.referenceablebehavior',
           'collective.dexteritytextindexer',
           'plone.app.multilingual',
-          'plone.multilingualbehavior',
           'plone.app.versioningbehavior',
           'p01.vocabulary.country',
           # -*- Extra requirements: -*-
