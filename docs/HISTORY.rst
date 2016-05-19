@@ -1,10 +1,10 @@
 Changelog
-=========
+========
 
-1.0.2 (unreleased)
+1.0.2 (may 19 2016)
 ------------------
 
-- Nothing changed yet.
+- for kaeru recent changes
 
 
 1.0.1 (2013-11-07)
